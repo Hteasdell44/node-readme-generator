@@ -5,7 +5,7 @@ const fs = require("fs");
 const { generateMarkdown } = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = ['What is the title of your project? Ex: random-password-generator', 'Write a short desciption of your project.', 
+const questions = ['What is the title of your project?', 'Write a short desciption of your project.', 
                     'How can users install the code for your project?', 'Where can users access the live version of the project? Ex: https://hteasdell44.github.io/wall-ball',
                     'How can others contribute to your project? If you are not open to external contribution, enter N/A.', 'Would you like to provide instructions for testing your code? If not, enter N/A.',
                     'What license would you like to use for your project?', 'What is your GitHub username?', 'What is your email?'];
