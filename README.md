@@ -29,7 +29,7 @@ This project is not protected by a license.
 
 ## Contributing
 
-N/A
+Much appreciation to [Lukas H.](https://github.com/lukas-h) who provided the repository of Markdown License Badges.
 
 ## Tests
 
