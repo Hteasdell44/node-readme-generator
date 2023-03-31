@@ -36,13 +36,13 @@ function renderLicenseSection(license) {
     case "Creative Commons license family": return `This project is protected by the Creative Commons License Family. Learn more about it here: ${renderLicenseLink(license)}`;
     case "MIT": return `This project is protected by the MIT License. Learn more about it here: ${renderLicenseLink(license)}`;
     case "zLib License": return `This project is protected by the zLib License. Learn more about it here: ${renderLicenseLink(license)}`;
-    case "No License": return "";
+    case "No License": return "This project is not protected by a license.";
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `\n${renderLicenseBadge(data.license)}\n\n## Description\n\n${data.description}\n\n## Table of Contents\n\n1. [Description] (#description)\n2. [Installation] (#installation)\n3. [Usage] (#usage)\n4. [License] (#license)\n5. [Contributing] (#contributing)\n6. [Tests] (#tests)\n7. [Questions] (#questions)\n\n## Installation\n\n${data.installation}\n\n## Usage\n\n${data.usage}\n\n## License\n\n${renderLicenseSection(data.license)}\n\n## Contributing\n\n${data.contribution}\n\n## Tests\n\n${data.testing}\n\n## Questions\n\nFind me on GitHub at ${data.username}.\n\nOr, email me at ${data.email}.`;
+  return `\n${renderLicenseBadge(data.license)}\n\n## Description\n\n${data.description}\n\n## Table of Contents\n\n1. [Description](#description)\n2. [Installation](#installation)\n3. [Usage](#usage)\n4. [License](#license)\n5. [Contributing](#contributing)\n6. [Tests](#tests)\n7. [Questions](#questions)\n\n## Installation\n\n${data.installation}\n\n## Usage\n\n${data.usage}\n\n## License\n\n${renderLicenseSection(data.license)}\n\n## Contributing\n\n${data.contribution}\n\n## Tests\n\n${data.testing}\n\n## Questions\n\nFind me on GitHub at [${data.username}](https://github.com/${data.username}).\n\nOr, email me at [${data.email}](mailto:${data.email}).`;
 };
 
 module.exports = {
