@@ -21,7 +21,7 @@ The code for this project can be found on my GitHub profile linked below.
 
 ## Usage
 
-This Node.js application is not deployed online.
+This Node.js application is not deployed online. Click [here](https://drive.google.com/file/d/1q1eO5rCAhJpcLsVdVUKzySRGSBwud9M6/view) to view a video walkthrough.
 
 ## License
 
